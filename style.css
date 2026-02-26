@@ -1,3 +1,33 @@
 body {
-    background-color: blue;
+    /* cor de fundo */
+    background-color: #27D3F5;
+    /* definir o FlexBox como layou da página */
+    display: flex;
+    /* centralizar na horizontal */
+    justify-content: center;
+    /* centralizar na vertical */
+    align-items: center;
+    /* define altura da página */
+    height: 100vh;
+}
+/* o ponto referencia um class */
+.cartao {
+    /* cor de fundo */
+    background-color: #ffffff;
+    /* espaçamento interno */
+    padding: 20px;
+    /* cantos arredondados */
+    border-radius: 10px;
+    /* alinhamento do texto */
+    text-align: center;
+}
+button {
+    background-color: #f52742;
+    /* cor do texto */
+    color: white;
+    border-radius: 10px;
+    /* 10px é em cima e em baixo e 20px é na esquerda e direita */
+    padding: 10px 20px;
+    /* sem borda */
+    border: none;
 }
