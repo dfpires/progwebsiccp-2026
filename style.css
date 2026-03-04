@@ -30,4 +30,21 @@ button {
     padding: 10px 20px;
     /* sem borda */
     border: none;
+    /* cria um ponteiro de mouse */
+    cursor: pointer;
+}
+/* quando o usuário passar o mouse sobre o botão */
+button:hover{
+    background-color: #0c10f5
+}
+/* referencia a class imagem */
+.imagem {
+    /* largura da imagem */
+    width: 120px;
+    /* altura da imagem */
+    height: 120px;
+    /* deixa a imagem circular */
+    border-radius: 50%;
+    /* adiciona borda colorida de 3px de espessura e sólida*/
+    border: 3px solid #0cc3f5;
 }
