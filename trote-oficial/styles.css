@@ -65,7 +65,6 @@ section {
     gap: 20px;
 }
 .caixa-importante {
-  
     flex: 1;
     background: #eef5ff;
     padding: 15px;
@@ -74,7 +73,6 @@ section {
 }
 
 .recompensas ul {
-
     list-style: none;
     padding: 0;
 }
