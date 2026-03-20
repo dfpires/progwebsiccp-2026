@@ -70,6 +70,7 @@ section {
     padding: 15px;
     border-left: 5px solid #2a5298;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .recompensas ul {
@@ -91,3 +92,9 @@ section {
     margin-bottom: 20px;
     text-align: justify; /* alinhamento à esquerda e à direita */
 }
+
+.valores ul {
+    list-style: none;
+    padding: 0px;
+}
+
