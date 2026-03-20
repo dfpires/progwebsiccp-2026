@@ -85,3 +85,9 @@ section {
     color: #27ae60;
     font-weight: bold;
 }
+
+.missao p {
+    line-height: 1.6; /* altura da linha - melhora a leitura de textos longos */
+    margin-bottom: 20px;
+    text-align: justify; /* alinhamento à esquerda e à direita */
+}
