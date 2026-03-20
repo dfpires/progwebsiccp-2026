@@ -98,3 +98,25 @@ section {
     padding: 0px;
 }
 
+table {
+    width: 100%; 
+    border-collapse: collapse; /* junto as bordas adjacentes, ficando uma só */
+    margin-top: 20px;
+    background-color: white;
+}
+th, td {
+    padding: 15px; text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #2a5298;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.amarelo {
+    width: 25px; height: 25px; background: yellow;
+}
+.cinza {
+    width: 25px; height: 25px; background: gray;
+}
