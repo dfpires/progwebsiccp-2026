@@ -120,3 +120,84 @@ th {
 .cinza {
     width: 25px; height: 25px; background: gray;
 }
+
+.kit-container {
+    background-color: #fff8e1;
+    border: 2px dashed #ffc107;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.lista-itens {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-itens li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #856404;
+}
+
+.suplementos {
+    border-left: 5px solid #ff4b2b;
+    background-color: #fff5f5;
+}
+
+/* Destaque para as Provas de Menção Honrosa */
+.memorias-facef, .acao-social, .album-figurinhas {
+    border-left: 5px solid #ffd700; /* Cor dourada para medalhas */
+    background-color: #fffdf0;
+}
+
+footer{
+    background-color: #1e3c72; /* Azul escuro oficial do Uni-FACEF  */
+    color: white; /* Texto em branco para contraste */
+     text-align: center; /* Centraliza as informações de contato */
+      padding: 30px 20px; /* Espaçamento interno para não sufocar o texto */
+      margin-top: 50px; /* Afasta o rodapé do conteúdo principal (main) */
+      font-size: 0.85rem; /* Fonte levemente menor para hierarquia visual */
+       border-top: 4px solid #ffd700; /* Linha dourada discreta no topo do footer */
+}
+
+footer p {
+
+     margin: 8px 0; /* Espaçamento entre as linhas de texto */
+      opacity: 0.9; /* Deixa o texto suavemente menos brilhante que o menu */
+}
+
+.timeline {
+    border-left: 3px solid #2a5298;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.evento {
+    margin-bottom: 25px;
+    position: relative; /* dá o poder de flutuar na página, sem alterar posição outros elementos*/
+}
+/* cria um pseudoelemento no CSS - serve para inserir conteúdo decorativo ou informativo logo no início de um elemento sem que altere HTML  - elemento fantasma */
+.evento::before { 
+    content: ''; /* sem texto */
+    width: 12px; /* largura da bolinha */
+    height: 12px; /* altura da bolinha */
+    background: #ff4b2b; /* fundo da bolinha */
+    border-radius: 50%; /* cria a bolinha */
+    position: absolute; /* cria a bolinha na posição atual */
+    left: -28px; /* vai para a esquerda */
+    top: 5px; /* abaixa 5px */ 
+}
+
+.grid-locais {
+    display: flex;
+    gap: 20px;
+}
+
+.local {
+    flex: 1; /* ocupe toda a área */
+    background: #f8f9fa;
+    padding :15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
