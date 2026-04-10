@@ -16,7 +16,7 @@ function calcular(){
     // recupera a cor escolhida pelo usuário
     let cor = document.getElementById("cor").value
     // estrutura de seleção
-    let metaKit // meta do kit de alimentação 
+    let metaKit // meta do kit de alimentação de acordo com a equipe
     if (cor == "verde"){
         metaKit = 61
     }
@@ -25,6 +25,18 @@ function calcular(){
     }
     else if (cor == "laranja"){
         metaKit = 21
+    }
+    // obter o valor que usuário informou de qtde de kits
+    let qtdeKits = Number(document.getElementById("qtdeKits").value)
+    // vamos verificar se bateu a meta de kit de alimentação
+    if (qtdeKits >= metaKit){ // bateu a meta
+        pontos = pontos + 5000 // acumulador
+        if (qtdeKits > metaKit){ // maior que a meta
+            pontos = pontos + (qtdeKits - metaKit) * (5000/metaKit)
+        }
+    }
+    else { // não bateu a meta
+        pontos = pontos + (qtdeKits) * (5000/metaKit)
     }
     // mostramos a pontuação total ao usuário
     document.getElementById("result").innerText = "Pontuação: " + pontos
