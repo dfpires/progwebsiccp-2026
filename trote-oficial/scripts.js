@@ -15,6 +15,7 @@ function calcular(){
     // pontuação dos kits de alimentação
     // recupera a cor escolhida pelo usuário
     let cor = document.getElementById("cor").value
+    
     // estrutura de seleção
     let metaKit // meta do kit de alimentação de acordo com a equipe
     if (cor == "verde"){
@@ -38,6 +39,18 @@ function calcular(){
     else { // não bateu a meta
         pontos = pontos + (qtdeKits) * (5000/metaKit)
     }
+    // define a meta do suplemento
+    let metaSuplemento
+    if (metaKit % 2 == 0) { // é par
+        metaSuplemento = metaKit / 2 // divisão de um inteiro por outro inteiro dá inteiro
+    }
+    else {
+        metaSuplemento = (metaKit / 2) + 1
+    }
+    // obter valor do usuário
+    let qtdeSuplemento = Number(document.getElementById("qtdeSuplemento").value)
+    
+
     // mostramos a pontuação total ao usuário
-    document.getElementById("result").innerText = "Pontuação: " + pontos
+    document.getElementById("result").innerText = "Pontuação: R$ " + pontos.toFixed(2)
 }
