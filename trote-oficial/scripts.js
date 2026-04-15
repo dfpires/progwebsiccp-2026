@@ -45,11 +45,23 @@ function calcular(){
         metaSuplemento = metaKit / 2 // divisão de um inteiro por outro inteiro dá inteiro
     }
     else {
-        metaSuplemento = (metaKit / 2) + 1
+        metaSuplemento = (metaKit / 2) + 0.5
     }
     // obter valor do usuário
     let qtdeSuplemento = Number(document.getElementById("qtdeSuplemento").value)
-    
+    if (qtdeSuplemento >= metaSuplemento){
+        pontos = pontos + 5000
+        if (qtdeSuplemento > metaSuplemento){
+            pontos = pontos + (qtdeSuplemento - metaSuplemento) * (5000/metaSuplemento)
+        }
+    }
+    else {
+        pontos = pontos + qtdeSuplemento * (5000/metaSuplemento)
+    }
+    // define a meta do leite
+    let metaLeite = metaKit
+    // define a meta do sangue
+    let metaSangue = metaSuplemento
 
     // mostramos a pontuação total ao usuário
     document.getElementById("result").innerText = "Pontuação: R$ " + pontos.toFixed(2)
