@@ -31,5 +31,35 @@
 
             </div>
         </section>
+        <section>
+            <h3> Autorizador de crédito bancário </h3>
+            <div>
+                <label> Renda </label>
+                <input type="number" id="renda" value="0" min="0"/>
+            </div>
+            <div>
+                <label> Idade </label>
+                <input type="number" id="idade" value="0" min="0"/>
+            </div>
+            <button onclick="credito()"> Verificar crédito </button>
+            <div id="resultadoCredito">
+
+            </div>
+        </section>
+        <section>
+            <h3> Torneio de Lutas </h3>
+            <div>
+                <label> Idade </label>
+                <input type="number" id="idadeLuta" min="0" value="0"/> 
+            </div>
+            <div>
+                <label> Peso </label>
+                <input type="number" id="peso" min="0" value="0"/>
+            </div>
+            <button onclick="luta()"> Categoriza lutador </button>
+            <div id="resultadoLuta">
+                
+            </div>
+        </section>
     </body>
 </html>
